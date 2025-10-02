@@ -8,34 +8,37 @@
 </head>
 
 <body>
-  <div class="container">
-    <!-- <div class="header">文本处理</div> -->
+  <div style="background-color: white;padding: 0 10%;">
+    <div class="container">
+      <!-- <div class="header">文本处理</div> -->
 
-    <div class="main-area">
-      <textarea id="textInput" class="text-area" placeholder="请输入要处理的文本..."></textarea>
+      <div class="main-area">
+        <textarea id="textInput" class="text-area" placeholder="请输入要处理的文本..."></textarea>
 
-      <div class="button-panel">
-        <button onclick="removeEmptyLines()">去掉空行</button>
-        <button onclick="removeExtraSpaces()">去掉多余空格</button>
-        <button onclick="joinCommas()">逗号拼接</button>
-        <button onclick="splitCommas()">逗号拆分</button>
-        <button onclick="sqlIn()">SQL IN</button>
-        <button onclick="deduplicate()">按行去重</button>
-        <button onclick="javaNaming()">Java命名</button>
-        <button onclick="sqlNaming()">SQL命名</button>
-        <button onclick="toggleCase()">大小写转换</button>
+        <div class="button-panel">
+          <button onclick="removeEmptyLines()">去掉空行</button>
+          <button onclick="removeExtraSpaces()">去掉多余空格</button>
+          <button onclick="joinCommas()">逗号拼接</button>
+          <button onclick="splitCommas()">逗号拆分</button>
+          <button onclick="sqlIn()">SQL IN</button>
+          <button onclick="deduplicate()">按行去重</button>
+          <button onclick="javaNaming()">Java命名</button>
+          <button onclick="sqlNaming()">SQL命名</button>
+          <button onclick="toggleCase()">大小写转换</button>
+        </div>
       </div>
-    </div>
 
-    <div class="footer">
-      <p class="status" id="status">当前共 0 行, 共 0 个字符</p>
-      <div class="controls">
-        <button onclick="copyText()">复制当前内容</button>
-        <button onclick="back()">后退</button>
-        <button onclick="forward()">前进</button>
+      <div class="footer">
+        <p class="status" id="status">当前共 0 行, 共 0 个字符</p>
+        <div class="controls">
+          <button onclick="copyText()">复制当前内容</button>
+          <button onclick="back()">后退</button>
+          <button onclick="forward()">前进</button>
+        </div>
       </div>
     </div>
   </div>
+
 
   <script src="js/main.js"></script>
 </body>

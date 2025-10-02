@@ -7,16 +7,15 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  padding: 0 10%;
 }
 
 .container {
   width: 100%;
-  /* max-width: 1200px; */
+
   margin: auto;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid #333; */
+  border: 1px solid #333;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
