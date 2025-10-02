@@ -1,0 +1,137 @@
+/* .w1 {
+  width: 1px;
+}
+
+.w1200 {
+  width: 1200px;
+}
+
+.wp1 {
+  width: 1%;
+}
+
+.h1 {
+  height: 1px;
+}
+
+.h800 {
+  height: 800px;
+}
+
+.hp1 {
+  height: 1%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  /* padding: 10px; */
+  /* 可选星空背景 */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+  background-color: #111;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.main-area {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.text-area {
+  flex: 1;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  /* 防止出现滚动条 */
+  min-height: 200px;
+  /* 可选：最小高度 */
+  max-height: 80%vh;
+  /* 可选：防止过高 */
+}
+
+.button-panel {
+  width: 150px;
+  background-color: #111;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-panel button {
+  padding: 8px 12px;
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.button-panel button:hover {
+  background-color: #ccc;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #111;
+  font-size: 14px;
+  color: #fff;
+}
+
+.status {
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 5px 10px;
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
